@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="128dp"
+    tools:context=".NewReminderFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/createTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/title_hint"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/createDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/description_hint"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/createTriggerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/trigger_time_hint"
+            android:inputType="datetime" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:text="@string/create_confirm" />
+
+
+</FrameLayout>
